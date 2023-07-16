@@ -1,0 +1,30 @@
+{
+  "name": "Clear Tab",
+  "manifest_version": 3,
+  "description": "Keeps you from opening too many tabs",
+  "version": "0.0.1",
+  "icons": {
+    "128": "media/logo128.png",
+    "48": "media/logo48.png",
+    "32": "media/logo32.png",
+    "16": "media/logo16.png"
+  },
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "commands": {
+    "clear-tab": {
+      "description": "Replaces a tab with a new one (CLEARS)",
+      "suggested_key": {
+        "default": "Alt+L"
+      }
+    }
+  },
+  "permissions": ["tabs"]
+}

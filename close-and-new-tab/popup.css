@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+body {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  /* min-height: 100vh; */
+  min-width: 400px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 1rem;
+}
+
+.split {
+  display: flex;
+  gap: 1rem;
+}
+
+.split button {
+  padding: 0.5rem;
+}
+button:hover {
+  transform: scale(1.05);
+}
+
+.change {
+  background: black;
+  color: white;
+  border: none;
+}
+
+.introduce {
+  background: white;
+  border: 2px solid black;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.hero {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.shortcut {
+  font-family: monospace;
+  background-color: lightgrey;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none !important;
+  background-color: red;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.slide-control {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.slide-control span {
+  color: grey;
+}
+.slide-control button {
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+.next {
+  background-color: black;
+  color: white;
+}
+
+.previous {
+  background-color: lightgrey;
+  color: black;
+}
+
+.keyword {
+  font-weight: bold;
+}
+
+img {
+  width: 90%;
+  border-radius: 1rem;
+}
