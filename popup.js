@@ -1,4 +1,5 @@
 
+
 const homeDiv = document.querySelector(".home");
 const slidesDiv = document.querySelector(".slides");
 const slides = document.querySelectorAll(".slide");
@@ -16,7 +17,9 @@ document.querySelector(".introduce").onclick = () => {
   slidesDiv.classList.remove("hidden");
   index = 0;
   show(index);
+ 
   console.log("into slides");
+
 };
 
 
@@ -25,7 +28,9 @@ document.querySelector(".change").onclick = () => {
 };
 
 function show(index) {
+
   console.log(index);
+
   for (const slide of slides) {
     slide.classList.add("hidden");
   }
@@ -44,6 +49,7 @@ nexts.forEach((next) => {
     show(index);
   };
 });
+
 previouses.forEach((previous) => {
   previous.onclick = () => {
     index -= 1;
@@ -52,7 +58,9 @@ previouses.forEach((previous) => {
 });
 
 async function setShortcuts() {
+  
   const extensionShortcuts = await chrome.commands.getAll();
+  
   const clearTabShortcut = extensionShortcuts[extensionShortcuts.length - 1];
   shortcuts.forEach(
     (shortcut) => (shortcut.textContent = clearTabShortcut.shortcut)
