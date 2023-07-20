@@ -42,6 +42,8 @@ nexts.forEach((next) => {
     show(index);
   };
 });
+
+
 previouses.forEach((previous) => {
   previous.onclick = () => {
     index -= 1;
