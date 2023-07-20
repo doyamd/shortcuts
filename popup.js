@@ -1,3 +1,4 @@
+
 const homeDiv = document.querySelector(".home");
 const slidesDiv = document.querySelector(".slides");
 const slides = document.querySelectorAll(".slide");
@@ -17,6 +18,7 @@ document.querySelector(".introduce").onclick = () => {
   show(index);
   console.log("into slides");
 };
+
 
 document.querySelector(".change").onclick = () => {
   chrome.runtime.sendMessage({ message: "open-shortcuts" });
@@ -42,8 +44,6 @@ nexts.forEach((next) => {
     show(index);
   };
 });
-
-
 previouses.forEach((previous) => {
   previous.onclick = () => {
     index -= 1;
